@@ -407,7 +407,18 @@ setTimeout(() => {
         <div data-poster-url="videos/background-video_poster.0000000.jpg" data-video-urls="videos/background-video_mp4.mp4,videos/background-video_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-3 w-background-video w-background-video-atom"><video id="ad92756a-6e8c-70bf-7aef-0e916e7f5203-video" autoplay="" loop="" style="background-image:url(&quot;videos/background-video_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
             <source src="videos/background-video_mp4.mp4" data-wf-ignore="true">
             <source src="videos/background-video_webm.webm" data-wf-ignore="true">
-          </video></div>
+          </video><noscript>
+            <style>
+              [data-wf-bgvideo-fallback-img] {
+                display: none;
+              }
+              @media (prefers-reduced-motion: reduce) {
+                [data-wf-bgvideo-fallback-img] {
+                  position: absolute; z-index: -100; display: inline-block; height: 100%; width: 100%; object-fit: cover;
+                }
+              }
+            </style><img data-wf-bgvideo-fallback-img="true" src="videos/background-video_poster.0000000.jpg" alt="">
+          </noscript></div>
       </section>
       <section id="about" class="section_impact">
         <div class="padding-section-medium"></div>
